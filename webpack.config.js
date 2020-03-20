@@ -12,7 +12,8 @@ module.exports = {
     extensions: ['.js', '.json'], // 设置查找文件后缀规则
     modules: [path.resolve('node_modules'), path.resolve('lib')], // webpack 解析模块时应该搜索的目录
     alias: {
-      '@src': path.resolve(__dirname, 'src')
+      '@src': path.resolve(__dirname, './src'),
+      '@utils': path.resolve(__dirname, './utils')
     }
   },
   module: {

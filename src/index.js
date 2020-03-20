@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { sayHi } from '@utils/index.js' 
 
 let result = 'react'
-ReactDOM.render(<h1>{result}</h1>, document.getElementById('app'))
+let say = sayHi()
+ReactDOM.render(<div><p>{result}</p><p>{say}</p></div>, document.getElementById('app'))
